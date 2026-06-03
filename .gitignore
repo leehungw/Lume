@@ -83,7 +83,7 @@ xcuserdata/
 # Xcode SCM / workspace metadata
 *.xccheckout
 *.xcscmblueprint
-*.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.xcodeproj/project.xcworkspace/
 
 ############################
 # Swift Package Manager
