@@ -2,7 +2,7 @@ import SwiftUI
 import Defaults
 
 struct FDRootScreen: View {
-    @EnvironmentObject private var router: FDAppRouter
+    @Environment(FDAppRouter.self) private var router
     @State var isDoneSplashing: Bool = false
     @Default(.isDoneOnboarding) private var isDoneOnboarding
 
@@ -32,7 +32,9 @@ struct FDRootScreen: View {
     }
 
     private func makeMainNavigationStack() -> some View {
-        NavigationStack(path: $router.path) {
+        @Bindable var router = router
+
+        return NavigationStack(path: $router.path) {
             FDMainScreen()
                 .navigationDestination(for: FDAppRoute.self) { route in
                     switch route {

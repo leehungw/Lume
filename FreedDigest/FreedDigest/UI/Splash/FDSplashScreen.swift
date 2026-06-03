@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct FDSplashScreen: View {
-    @EnvironmentObject private var router: FDAppRouter
-    @StateObject private var viewModel = FDSplashViewModel()
+    @Environment(FDAppRouter.self) private var router
 
     var body: some View {
         VStack(spacing: 16) {
@@ -12,7 +11,7 @@ struct FDSplashScreen: View {
             Text("Welcome back.")
                 .foregroundStyle(.secondary)
             Button("Continue") {
-                viewModel.continueTapped(router: router)
+                router.setRoot(FDAppRoute.onboarding)
             }
             .buttonStyle(.borderedProminent)
         }

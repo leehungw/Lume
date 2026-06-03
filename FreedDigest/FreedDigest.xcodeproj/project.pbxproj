@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A949A502FD071F200BEF289 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949A4F2FD071F200BEF289 /* Loggable.swift */; };
 		A0C8FB862F29ADD300E80EC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB802F29ADD300E80EC1 /* ContentView.swift */; };
 		A0C8FB872F29ADD300E80EC1 /* FreedDigest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB812F29ADD300E80EC1 /* FreedDigest.xcdatamodeld */; };
 		A0C8FB882F29ADD300E80EC1 /* FreedDigestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB822F29ADD300E80EC1 /* FreedDigestApp.swift */; };
@@ -15,8 +16,6 @@
 		A0C8FB982F29AEE000E80EC1 /* production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0C8FB962F29AEE000E80EC1 /* production.xcconfig */; };
 		A0C8FB992F29AEE000E80EC1 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0C8FB952F29AEE000E80EC1 /* dev.xcconfig */; };
 		A0C8FB9D2F29AEEA00E80EC1 /* FDSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB9A2F29AEEA00E80EC1 /* FDSplashScreen.swift */; };
-		A0C8FB9E2F29AEEA00E80EC1 /* FDSplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB9B2F29AEEA00E80EC1 /* FDSplashViewModel.swift */; };
-		A0C8FBA22F29AEEF00E80EC1 /* FDOnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBA02F29AEEF00E80EC1 /* FDOnboardingViewModel.swift */; };
 		A0C8FBA32F29AEEF00E80EC1 /* FDOnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB9F2F29AEEF00E80EC1 /* FDOnboardingScreen.swift */; };
 		A0C8FBA72F29AEF600E80EC1 /* FDAppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBA42F29AEF600E80EC1 /* FDAppRoute.swift */; };
 		A0C8FBA82F29AEF600E80EC1 /* FDRootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBA52F29AEF600E80EC1 /* FDRootScreen.swift */; };
@@ -36,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A949A4F2FD071F200BEF289 /* Loggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
 		A0C8FB6C2F29AD4100E80EC1 /* FreedDigest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreedDigest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C8FB7F2F29ADD300E80EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C8FB802F29ADD300E80EC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,9 +46,7 @@
 		A0C8FB952F29AEE000E80EC1 /* dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
 		A0C8FB962F29AEE000E80EC1 /* production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = production.xcconfig; sourceTree = "<group>"; };
 		A0C8FB9A2F29AEEA00E80EC1 /* FDSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDSplashScreen.swift; sourceTree = "<group>"; };
-		A0C8FB9B2F29AEEA00E80EC1 /* FDSplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDSplashViewModel.swift; sourceTree = "<group>"; };
 		A0C8FB9F2F29AEEF00E80EC1 /* FDOnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDOnboardingScreen.swift; sourceTree = "<group>"; };
-		A0C8FBA02F29AEEF00E80EC1 /* FDOnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDOnboardingViewModel.swift; sourceTree = "<group>"; };
 		A0C8FBA42F29AEF600E80EC1 /* FDAppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDAppRoute.swift; sourceTree = "<group>"; };
 		A0C8FBA52F29AEF600E80EC1 /* FDRootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDRootScreen.swift; sourceTree = "<group>"; };
 		A0C8FBA92F29AF0200E80EC1 /* FDApplicationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDApplicationModule.swift; sourceTree = "<group>"; };
@@ -150,6 +148,7 @@
 		A0C8FB922F29AE8600E80EC1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0A949A4F2FD071F200BEF289 /* Loggable.swift */,
 				A0C8FBC12F29B0A400E80EC1 /* AppConst.swift */,
 				A0C8FBBF2F29B09900E80EC1 /* EnvironmentKey+.swift */,
 			);
@@ -186,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				A0C8FB9A2F29AEEA00E80EC1 /* FDSplashScreen.swift */,
-				A0C8FB9B2F29AEEA00E80EC1 /* FDSplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -195,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				A0C8FB9F2F29AEEF00E80EC1 /* FDOnboardingScreen.swift */,
-				A0C8FBA02F29AEEF00E80EC1 /* FDOnboardingViewModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -320,10 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A949A502FD071F200BEF289 /* Loggable.swift in Sources */,
 				A0C8FB862F29ADD300E80EC1 /* ContentView.swift in Sources */,
 				A0C8FBC22F29B0A400E80EC1 /* AppConst.swift in Sources */,
 				A0C8FB9D2F29AEEA00E80EC1 /* FDSplashScreen.swift in Sources */,
-				A0C8FB9E2F29AEEA00E80EC1 /* FDSplashViewModel.swift in Sources */,
 				A0C8FB872F29ADD300E80EC1 /* FreedDigest.xcdatamodeld in Sources */,
 				A0C8FB882F29ADD300E80EC1 /* FreedDigestApp.swift in Sources */,
 				A0C8FBA72F29AEF600E80EC1 /* FDAppRoute.swift in Sources */,
@@ -331,7 +328,6 @@
 				B20000312F2B000100000001 /* FDAppRouter.swift in Sources */,
 				A0C8FBC02F29B09900E80EC1 /* EnvironmentKey+.swift in Sources */,
 				A0C8FBAA2F29AF0200E80EC1 /* FDApplicationModule.swift in Sources */,
-				A0C8FBA22F29AEEF00E80EC1 /* FDOnboardingViewModel.swift in Sources */,
 				B10000012F2A000100000001 /* FDRepository.swift in Sources */,
 				A0C8FBB62F29B00300E80EC1 /* FDUserDefaults.swift in Sources */,
 				A0C8FBBD2F29B07400E80EC1 /* FDMainScreen.swift in Sources */,

@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct FDOnboardingScreen: View {
-    @EnvironmentObject private var router: FDAppRouter
-    @StateObject private var viewModel = FDOnboardingViewModel()
+    @Environment(FDAppRouter.self) private var router
 
     var body: some View {
         VStack(spacing: 16) {
@@ -12,7 +11,7 @@ struct FDOnboardingScreen: View {
             Text("A short intro before you start.")
                 .foregroundStyle(.secondary)
             Button("Finish") {
-                viewModel.finishTapped(router: router)
+                router.setRoot(FDAppRoute.main)
             }
             .buttonStyle(.borderedProminent)
         }
