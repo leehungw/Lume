@@ -15,6 +15,9 @@ final class FDAppRouter: Loggable {
     func setRoot(_ route: FDAppRoute) {
         logInfo("setRoot -> \(String(describing: route))")
         path = NavigationPath()
+
+        guard route != .main else { return }
+
         path.append(route)
     }
     
