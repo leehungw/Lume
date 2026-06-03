@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0C8FB862F29ADD300E80EC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB802F29ADD300E80EC1 /* ContentView.swift */; };
+		A0C8FB872F29ADD300E80EC1 /* FreedDigest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB812F29ADD300E80EC1 /* FreedDigest.xcdatamodeld */; };
+		A0C8FB882F29ADD300E80EC1 /* FreedDigestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB822F29ADD300E80EC1 /* FreedDigestApp.swift */; };
+		A0C8FB892F29ADD300E80EC1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB832F29ADD300E80EC1 /* Persistence.swift */; };
+		A0C8FB8A2F29ADD300E80EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C8FB7F2F29ADD300E80EC1 /* Assets.xcassets */; };
+		A0C8FB982F29AEE000E80EC1 /* production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0C8FB962F29AEE000E80EC1 /* production.xcconfig */; };
+		A0C8FB992F29AEE000E80EC1 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0C8FB952F29AEE000E80EC1 /* dev.xcconfig */; };
+		A0C8FB9D2F29AEEA00E80EC1 /* FDSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB9A2F29AEEA00E80EC1 /* FDSplashScreen.swift */; };
+		A0C8FB9E2F29AEEA00E80EC1 /* FDSplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB9B2F29AEEA00E80EC1 /* FDSplashViewModel.swift */; };
+		A0C8FBA22F29AEEF00E80EC1 /* FDOnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBA02F29AEEF00E80EC1 /* FDOnboardingViewModel.swift */; };
+		A0C8FBA32F29AEEF00E80EC1 /* FDOnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB9F2F29AEEF00E80EC1 /* FDOnboardingScreen.swift */; };
+		A0C8FBA72F29AEF600E80EC1 /* FDAppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBA42F29AEF600E80EC1 /* FDAppRoute.swift */; };
+		A0C8FBA82F29AEF600E80EC1 /* FDRootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBA52F29AEF600E80EC1 /* FDRootScreen.swift */; };
+		A0C8FBAA2F29AF0200E80EC1 /* FDApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBA92F29AF0200E80EC1 /* FDApplicationModule.swift */; };
+		A0C8FBB62F29B00300E80EC1 /* FDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBB42F29B00300E80EC1 /* FDUserDefaults.swift */; };
+		A0C8FBB92F29B00900E80EC1 /* FDPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBB72F29B00900E80EC1 /* FDPersistenceController.swift */; };
+		A0C8FBBD2F29B07400E80EC1 /* FDMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBBB2F29B07400E80EC1 /* FDMainScreen.swift */; };
+		A0C8FBC02F29B09900E80EC1 /* EnvironmentKey+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBBF2F29B09900E80EC1 /* EnvironmentKey+.swift */; };
+		A0C8FBC22F29B0A400E80EC1 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FBC12F29B0A400E80EC1 /* AppConst.swift */; };
+		B10000012F2A000100000001 /* FDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000012F2A000100000002 /* FDRepository.swift */; };
+		B20000012F2B000100000001 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B20000212F2B000100000001 /* Defaults */; };
+		B20000022F2B000100000001 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = B20000222F2B000100000001 /* Logging */; };
+		B20000032F2B000100000001 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = B20000232F2B000100000001 /* Factory */; };
+		B20000042F2B000100000001 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B20000242F2B000100000001 /* Alamofire */; };
+		B20000052F2B000100000001 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B20000252F2B000100000001 /* Kingfisher */; };
+		B20000312F2B000100000001 /* FDAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000322F2B000100000001 /* FDAppRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0C8FB6C2F29AD4100E80EC1 /* FreedDigest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreedDigest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C8FB7F2F29ADD300E80EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0C8FB802F29ADD300E80EC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0C8FB822F29ADD300E80EC1 /* FreedDigestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedDigestApp.swift; sourceTree = "<group>"; };
+		A0C8FB832F29ADD300E80EC1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A0C8FB852F29ADD300E80EC1 /* FreedDigest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FreedDigest.xcdatamodel; sourceTree = "<group>"; };
+		A0C8FB8B2F29AE0B00E80EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C8FB952F29AEE000E80EC1 /* dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
+		A0C8FB962F29AEE000E80EC1 /* production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = production.xcconfig; sourceTree = "<group>"; };
+		A0C8FB9A2F29AEEA00E80EC1 /* FDSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDSplashScreen.swift; sourceTree = "<group>"; };
+		A0C8FB9B2F29AEEA00E80EC1 /* FDSplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDSplashViewModel.swift; sourceTree = "<group>"; };
+		A0C8FB9F2F29AEEF00E80EC1 /* FDOnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDOnboardingScreen.swift; sourceTree = "<group>"; };
+		A0C8FBA02F29AEEF00E80EC1 /* FDOnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDOnboardingViewModel.swift; sourceTree = "<group>"; };
+		A0C8FBA42F29AEF600E80EC1 /* FDAppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDAppRoute.swift; sourceTree = "<group>"; };
+		A0C8FBA52F29AEF600E80EC1 /* FDRootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDRootScreen.swift; sourceTree = "<group>"; };
+		A0C8FBA92F29AF0200E80EC1 /* FDApplicationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDApplicationModule.swift; sourceTree = "<group>"; };
+		A0C8FBB42F29B00300E80EC1 /* FDUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDUserDefaults.swift; sourceTree = "<group>"; };
+		A0C8FBB72F29B00900E80EC1 /* FDPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDPersistenceController.swift; sourceTree = "<group>"; };
+		A0C8FBBB2F29B07400E80EC1 /* FDMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDMainScreen.swift; sourceTree = "<group>"; };
+		A0C8FBBF2F29B09900E80EC1 /* EnvironmentKey+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentKey+.swift"; sourceTree = "<group>"; };
+		A0C8FBC12F29B0A400E80EC1 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
+		B10000012F2A000100000002 /* FDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDRepository.swift; sourceTree = "<group>"; };
+		B20000322F2B000100000001 /* FDAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDAppRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0C8FB692F29AD4100E80EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20000012F2B000100000001 /* Defaults in Frameworks */,
+				B20000022F2B000100000001 /* Logging in Frameworks */,
+				B20000032F2B000100000001 /* Factory in Frameworks */,
+				B20000042F2B000100000001 /* Alamofire in Frameworks */,
+				B20000052F2B000100000001 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0C8FB632F29AD4100E80EC1 = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB842F29ADD300E80EC1 /* FreedDigest */,
+				A0C8FB6D2F29AD4100E80EC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0C8FB6D2F29AD4100E80EC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB6C2F29AD4100E80EC1 /* FreedDigest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0C8FB842F29ADD300E80EC1 /* FreedDigest */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB8B2F29AE0B00E80EC1 /* Info.plist */,
+				A0C8FB822F29ADD300E80EC1 /* FreedDigestApp.swift */,
+				A0C8FB8E2F29AE7100E80EC1 /* Data */,
+				A0C8FB902F29AE7A00E80EC1 /* Repository */,
+				A0C8FB8F2F29AE7600E80EC1 /* DI */,
+				A0C8FB912F29AE7F00E80EC1 /* UI */,
+				A0C8FB922F29AE8600E80EC1 /* Utils */,
+				A0C8FB932F29AE8B00E80EC1 /* Config */,
+				A0C8FB942F29AE9D00E80EC1 /* Res */,
+				A0C8FB802F29ADD300E80EC1 /* ContentView.swift */,
+				A0C8FB832F29ADD300E80EC1 /* Persistence.swift */,
+			);
+			path = FreedDigest;
+			sourceTree = "<group>";
+		};
+		A0C8FB8E2F29AE7100E80EC1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBB82F29B00900E80EC1 /* Database */,
+				A0C8FBB52F29B00300E80EC1 /* UserDefaults */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A0C8FB8F2F29AE7600E80EC1 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBA92F29AF0200E80EC1 /* FDApplicationModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		A0C8FB902F29AE7A00E80EC1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B10000012F2A000100000002 /* FDRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A0C8FB912F29AE7F00E80EC1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBA62F29AEF600E80EC1 /* Root */,
+				A0C8FBBC2F29B07400E80EC1 /* Main */,
+				A0C8FBA12F29AEEF00E80EC1 /* Onboarding */,
+				A0C8FB9C2F29AEEA00E80EC1 /* Splash */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A0C8FB922F29AE8600E80EC1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBC12F29B0A400E80EC1 /* AppConst.swift */,
+				A0C8FBBF2F29B09900E80EC1 /* EnvironmentKey+.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0C8FB932F29AE8B00E80EC1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB972F29AEE000E80EC1 /* xcconfigs */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A0C8FB942F29AE9D00E80EC1 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB7F2F29ADD300E80EC1 /* Assets.xcassets */,
+				A0C8FB812F29ADD300E80EC1 /* FreedDigest.xcdatamodeld */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		A0C8FB972F29AEE000E80EC1 /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB952F29AEE000E80EC1 /* dev.xcconfig */,
+				A0C8FB962F29AEE000E80EC1 /* production.xcconfig */,
+			);
+			path = xcconfigs;
+			sourceTree = "<group>";
+		};
+		A0C8FB9C2F29AEEA00E80EC1 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB9A2F29AEEA00E80EC1 /* FDSplashScreen.swift */,
+				A0C8FB9B2F29AEEA00E80EC1 /* FDSplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A0C8FBA12F29AEEF00E80EC1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FB9F2F29AEEF00E80EC1 /* FDOnboardingScreen.swift */,
+				A0C8FBA02F29AEEF00E80EC1 /* FDOnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A0C8FBA62F29AEF600E80EC1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBA42F29AEF600E80EC1 /* FDAppRoute.swift */,
+				B20000322F2B000100000001 /* FDAppRouter.swift */,
+				A0C8FBA52F29AEF600E80EC1 /* FDRootScreen.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A0C8FBB52F29B00300E80EC1 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBB42F29B00300E80EC1 /* FDUserDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		A0C8FBB82F29B00900E80EC1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBB72F29B00900E80EC1 /* FDPersistenceController.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A0C8FBBC2F29B07400E80EC1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8FBBB2F29B07400E80EC1 /* FDMainScreen.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0C8FB6B2F29AD4100E80EC1 /* FreedDigest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C8FB7C2F29AD4200E80EC1 /* Build configuration list for PBXNativeTarget "FreedDigest" */;
+			buildPhases = (
+				A0C8FB682F29AD4100E80EC1 /* Sources */,
+				A0C8FB692F29AD4100E80EC1 /* Frameworks */,
+				A0C8FB6A2F29AD4100E80EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreedDigest;
+			packageProductDependencies = (
+				B20000212F2B000100000001 /* Defaults */,
+				B20000222F2B000100000001 /* Logging */,
+				B20000232F2B000100000001 /* Factory */,
+				B20000242F2B000100000001 /* Alamofire */,
+				B20000252F2B000100000001 /* Kingfisher */,
+			);
+			productName = FreedDigest;
+			productReference = A0C8FB6C2F29AD4100E80EC1 /* FreedDigest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0C8FB642F29AD4100E80EC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					A0C8FB6B2F29AD4100E80EC1 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = A0C8FB672F29AD4100E80EC1 /* Build configuration list for PBXProject "FreedDigest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0C8FB632F29AD4100E80EC1;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B20000112F2B000100000001 /* XCRemoteSwiftPackageReference "Defaults" */,
+				B20000122F2B000100000001 /* XCRemoteSwiftPackageReference "swift-log" */,
+				B20000132F2B000100000001 /* XCRemoteSwiftPackageReference "Factory" */,
+				B20000142F2B000100000001 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B20000152F2B000100000001 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A0C8FB6D2F29AD4100E80EC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0C8FB6B2F29AD4100E80EC1 /* FreedDigest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0C8FB6A2F29AD4100E80EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C8FB8A2F29ADD300E80EC1 /* Assets.xcassets in Resources */,
+				A0C8FB982F29AEE000E80EC1 /* production.xcconfig in Resources */,
+				A0C8FB992F29AEE000E80EC1 /* dev.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0C8FB682F29AD4100E80EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C8FB862F29ADD300E80EC1 /* ContentView.swift in Sources */,
+				A0C8FBC22F29B0A400E80EC1 /* AppConst.swift in Sources */,
+				A0C8FB9D2F29AEEA00E80EC1 /* FDSplashScreen.swift in Sources */,
+				A0C8FB9E2F29AEEA00E80EC1 /* FDSplashViewModel.swift in Sources */,
+				A0C8FB872F29ADD300E80EC1 /* FreedDigest.xcdatamodeld in Sources */,
+				A0C8FB882F29ADD300E80EC1 /* FreedDigestApp.swift in Sources */,
+				A0C8FBA72F29AEF600E80EC1 /* FDAppRoute.swift in Sources */,
+				A0C8FBA82F29AEF600E80EC1 /* FDRootScreen.swift in Sources */,
+				B20000312F2B000100000001 /* FDAppRouter.swift in Sources */,
+				A0C8FBC02F29B09900E80EC1 /* EnvironmentKey+.swift in Sources */,
+				A0C8FBAA2F29AF0200E80EC1 /* FDApplicationModule.swift in Sources */,
+				A0C8FBA22F29AEEF00E80EC1 /* FDOnboardingViewModel.swift in Sources */,
+				B10000012F2A000100000001 /* FDRepository.swift in Sources */,
+				A0C8FBB62F29B00300E80EC1 /* FDUserDefaults.swift in Sources */,
+				A0C8FBBD2F29B07400E80EC1 /* FDMainScreen.swift in Sources */,
+				A0C8FBA32F29AEEF00E80EC1 /* FDOnboardingScreen.swift in Sources */,
+				A0C8FB892F29ADD300E80EC1 /* Persistence.swift in Sources */,
+				A0C8FBB92F29B00900E80EC1 /* FDPersistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0C8FB7A2F29AD4200E80EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 48SGC99S3Q;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0C8FB7B2F29AD4200E80EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 48SGC99S3Q;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A0C8FB7D2F29AD4200E80EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SS5ZMN85B;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreedDigest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungle.freed.digest;
+				PRODUCT_NAME = FreedDigest;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		A0C8FB7E2F29AD4200E80EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SS5ZMN85B;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FreedDigest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungle.freed.digest;
+				PRODUCT_NAME = FreedDigest;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0C8FB672F29AD4100E80EC1 /* Build configuration list for PBXProject "FreedDigest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C8FB7A2F29AD4200E80EC1 /* Debug */,
+				A0C8FB7B2F29AD4200E80EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0C8FB7C2F29AD4200E80EC1 /* Build configuration list for PBXNativeTarget "FreedDigest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C8FB7D2F29AD4200E80EC1 /* Debug */,
+				A0C8FB7E2F29AD4200E80EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B20000112F2B000100000001 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.6;
+			};
+		};
+		B20000122F2B000100000001 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.1;
+			};
+		};
+		B20000132F2B000100000001 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+		B20000142F2B000100000001 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+		B20000152F2B000100000001 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B20000212F2B000100000001 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20000112F2B000100000001 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		B20000222F2B000100000001 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20000122F2B000100000001 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		B20000232F2B000100000001 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20000132F2B000100000001 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		B20000242F2B000100000001 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20000142F2B000100000001 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B20000252F2B000100000001 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20000152F2B000100000001 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A0C8FB812F29ADD300E80EC1 /* FreedDigest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A0C8FB852F29ADD300E80EC1 /* FreedDigest.xcdatamodel */,
+			);
+			currentVersion = A0C8FB852F29ADD300E80EC1 /* FreedDigest.xcdatamodel */;
+			path = FreedDigest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A0C8FB642F29AD4100E80EC1 /* Project object */;
+}
