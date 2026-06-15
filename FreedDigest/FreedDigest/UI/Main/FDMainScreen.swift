@@ -1,16 +1,26 @@
 import SwiftUI
 
 struct FDMainScreen: View {
-    @Environment(\.safeAreaInsets) private var safeAreaInsets
-    
+    @State private var selectedTab: FDMainTab = .digest
+
     var body: some View {
-        ZStack {
-            Color.black
-        }
-        .ignoresSafeArea()
-        .onAppear {
-            UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
-            UIScrollView.appearance().automaticallyAdjustsScrollIndicatorInsets = false
+        TabView(selection: $selectedTab) {
+            FDDigestScreen()
+                .tabItem {
+                    Label("Digest", systemImage: "newspaper")
+                }
+                .tag(FDMainTab.digest)
+
+            FDLibraryScreen()
+                .tabItem {
+                    Label("Library", systemImage: "books.vertical")
+                }
+                .tag(FDMainTab.library)
         }
     }
+}
+
+private enum FDMainTab: Hashable {
+    case digest
+    case library
 }

@@ -1,21 +1,22 @@
 import SwiftUI
 
 struct FDSplashScreen: View {
-    @Environment(FDAppRouter.self) private var router
-
     var body: some View {
-        VStack(spacing: 16) {
-            Text("FreedDigest")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-            Text("Welcome back.")
-                .foregroundStyle(.secondary)
-            Button("Continue") {
-                router.setRoot(FDAppRoute.onboarding)
-            }
-            .buttonStyle(.borderedProminent)
+        ZStack {
+            Image(.imgSplashBg)
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+
+            Image(.imgAppIcon)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 132, height: 132)
+                .shadow(color: .black.opacity(0.24), radius: 24, y: 12)
+                .accessibilityHidden(true)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.black)
         .navigationBarBackButtonHidden(true)
     }
 }

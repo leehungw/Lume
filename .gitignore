@@ -115,5 +115,9 @@ fastlane/screenshots/
 fastlane/test_output/
 fastlane/*.log
 
+############################
+# CodeGraph
+############################
+.codegraph/
 
 

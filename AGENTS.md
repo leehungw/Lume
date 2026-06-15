@@ -47,11 +47,15 @@ features is real. Repositories go in `Repository/`. Core Data stack work goes in
 `Data/Database/`. Defaults keys go in `Data/UserDefaults/`. Resources go in
 `Res/`.
 
-Prefer BLoC-style feature state for new product flows. Use
-`FD<Feature>Bloc`, `FD<Feature>State`, and `FD<Feature>Event` for feature state
-and user actions instead of adding new pure MVVM view models. Views should send
-events to blocs, render bloc state, and keep business logic out of SwiftUI
-`body` implementations.
+Use the BLoC pattern for feature state and user actions. For each stateful
+feature, define `FD<Feature>Bloc`, `FD<Feature>State`, and
+`FD<Feature>Event` instead of adding new pure MVVM view models. Put those files
+in their own feature-local group/folder:
+`FreedDigest/FreedDigest/UI/<Feature>/Bloc/`. If a feature needs one-shot
+outputs such as navigation, alerts, or toast commands, keep the optional
+`FD<Feature>Effect` type in the same `Bloc/` group. Views should send events to
+blocs, render bloc state, and keep business logic out of SwiftUI `body`
+implementations.
 
 Prefer small, reviewable changes over broad refactors. Preserve existing
 structure and naming unless there is a clear reason to change it. Do not modify
