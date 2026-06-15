@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A949A502FD071F200BEF289 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A949A4F2FD071F200BEF289 /* Loggable.swift */; };
+		0A969CD62FE0270000AB82E7 /* FDDigestScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A969CD72FE0270000AB82E7 /* FDDigestScreen.swift */; };
+		0A969CD82FE0270000AB82E7 /* FDLibraryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A969CD92FE0270000AB82E7 /* FDLibraryScreen.swift */; };
 		A0C8FB862F29ADD300E80EC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB802F29ADD300E80EC1 /* ContentView.swift */; };
 		A0C8FB872F29ADD300E80EC1 /* FreedDigest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB812F29ADD300E80EC1 /* FreedDigest.xcdatamodeld */; };
 		A0C8FB882F29ADD300E80EC1 /* FreedDigestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8FB822F29ADD300E80EC1 /* FreedDigestApp.swift */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		0A949A4F2FD071F200BEF289 /* Loggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		0A969CD72FE0270000AB82E7 /* FDDigestScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDDigestScreen.swift; sourceTree = "<group>"; };
+		0A969CD92FE0270000AB82E7 /* FDLibraryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDLibraryScreen.swift; sourceTree = "<group>"; };
 		A0C8FB6C2F29AD4100E80EC1 /* FreedDigest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreedDigest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C8FB7F2F29ADD300E80EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C8FB802F29ADD300E80EC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A969CD42FE026AE00AB82E7 /* Digest */ = {
+			isa = PBXGroup;
+			children = (
+				0A969CD72FE0270000AB82E7 /* FDDigestScreen.swift */,
+			);
+			path = Digest;
+			sourceTree = "<group>";
+		};
+		0A969CD52FE026BB00AB82E7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0A969CD92FE0270000AB82E7 /* FDLibraryScreen.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		A0C8FB632F29AD4100E80EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +157,8 @@
 		A0C8FB912F29AE7F00E80EC1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0A969CD52FE026BB00AB82E7 /* Library */,
+				0A969CD42FE026AE00AB82E7 /* Digest */,
 				A0C8FBA62F29AEF600E80EC1 /* Root */,
 				A0C8FBBC2F29B07400E80EC1 /* Main */,
 				A0C8FBA12F29AEEF00E80EC1 /* Onboarding */,
@@ -320,10 +342,12 @@
 				0A949A502FD071F200BEF289 /* Loggable.swift in Sources */,
 				A0C8FB862F29ADD300E80EC1 /* ContentView.swift in Sources */,
 				A0C8FBC22F29B0A400E80EC1 /* AppConst.swift in Sources */,
+				0A969CD62FE0270000AB82E7 /* FDDigestScreen.swift in Sources */,
 				A0C8FB9D2F29AEEA00E80EC1 /* FDSplashScreen.swift in Sources */,
 				A0C8FB872F29ADD300E80EC1 /* FreedDigest.xcdatamodeld in Sources */,
 				A0C8FB882F29ADD300E80EC1 /* FreedDigestApp.swift in Sources */,
 				A0C8FBA72F29AEF600E80EC1 /* FDAppRoute.swift in Sources */,
+				0A969CD82FE0270000AB82E7 /* FDLibraryScreen.swift in Sources */,
 				A0C8FBA82F29AEF600E80EC1 /* FDRootScreen.swift in Sources */,
 				B20000312F2B000100000001 /* FDAppRouter.swift in Sources */,
 				A0C8FBC02F29B09900E80EC1 /* EnvironmentKey+.swift in Sources */,
@@ -461,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SS5ZMN85B;
@@ -509,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7SS5ZMN85B;
